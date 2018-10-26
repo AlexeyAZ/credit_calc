@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "BasisGrotesqueProMedium";
+  src: url("../fonts/BasisGrotesquePro/BasisGrotesqueProMedium.otf") format("woff2"), url("../fonts/BasisGrotesquePro/BasisGrotesqueProMedium.otf") format("ttf"), url("../fonts/BasisGrotesquePro/BasisGrotesqueProMedium.otf") format("otf"), url("../fonts/BasisGrotesquePro/BasisGrotesqueProMedium.otf") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "BasisGrotesqueProMono";
+  src: url("../fonts/BasisGrotesquePro/BasisGrotesqueProMono.otf") format("woff2"), url("../fonts/BasisGrotesquePro/BasisGrotesqueProMono.otf") format("ttf"), url("../fonts/BasisGrotesquePro/BasisGrotesqueProMono.otf") format("otf"), url("../fonts/BasisGrotesquePro/BasisGrotesqueProMono.otf") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "BasisGrotesqueProMonoItalic";
+  src: url("../fonts/BasisGrotesquePro/BasisGrotesqueProMonoItalic.otf") format("woff2"), url("../fonts/BasisGrotesquePro/BasisGrotesqueProMonoItalic.otf") format("ttf"), url("../fonts/BasisGrotesquePro/BasisGrotesqueProMonoItalic.otf") format("otf"), url("../fonts/BasisGrotesquePro/BasisGrotesqueProMonoItalic.otf") format("woff");
+  font-weight: 300;
+  font-style: normal; }
