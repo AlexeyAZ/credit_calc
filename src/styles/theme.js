@@ -29,35 +29,43 @@ const theme = {
       bold: 700
     },
     fonts: {
-      BasisGrotesquePro: {
-        main: 'BasisGrotesquePro, Arial, Helvetica, sans-serif',
+      Roboto: {
+        main: 'Roboto, Arial, Helvetica, sans-serif',
         fallback: 'Arial, Helvetica, sans-serif'
       },
-      BasisGrotesqueProMono: {
-        main: 'BasisGrotesqueProMono, Arial, Helvetica, sans-serif',
-        fallback: 'Arial, Helvetica, sans-serif'
-      }
     },
-    defaultFont: 'BasisGrotesqueProMono',
+    defaultFont: 'Roboto',
     fontSizes: [
       12,
       14,
       16,
       20,
-      24,
+      22,
       32,
       48,
       64
     ],
     colors: {
-      green: {
-        main: '#00FC00'
-      },
       blue: {
-        darkest: '#080d26'
+        main: '#4d49f7',
+      },
+      purple: {
+        main: '#6f24e5',
+      },
+      green: {
+        main: '#61dd44',
+      },
+      orange: {
+        main: '#fdcb2f',
+      },
+      red: {
+        main: '#e82d2c',
       },
       gray: {
-        light: '#B7BAD0'
+        light: '#f1f2f4',
+        main: '#e8e8e8',
+        dark: '#b1aeb9',
+        darkest: '#313038',
       }
     },
     radii: [0, 2, 4]

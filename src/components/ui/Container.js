@@ -1,4 +1,3 @@
-/* eslint-disable */
 import styled from 'styled-components';
 import {
   borders,
@@ -11,25 +10,6 @@ import {
   height,
   width,
   maxWidth,
-  flexWrap,
-  flexDirection,
-  alignItems,
-  justifyContent,
-  fontSize,
-  fontFamily,
-  fontWeight,
-  textAlign,
-  lineHeight,
-  letterSpacing,
-  borderRadius,
-  buttonStyle,
-  boxShadow,
-  backgroundImage,
-  backgroundSize,
-  backgroundPosition,
-  backgroundRepeat,
-  opacity,
-  variant,
 } from 'styled-system';
 
 const Container = styled.div(

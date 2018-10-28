@@ -2,15 +2,17 @@
 
   @font-face {
       font-family: $name;
-      src: url('#{$path}.otf') format('woff2'),
-          url('#{$path}.otf') format('ttf'),
-          url('#{$path}.otf') format('otf'),
-          url('#{$path}.otf') format('woff');
+      src: url('#{$path}.ttf') format('woff2'),
+          url('#{$path}.ttf') format('ttf'),
+          url('#{$path}.ttf') format('otf'),
+          url('#{$path}.ttf') format('woff');
       font-weight: #{$weight};
       font-style: #{$style};
   }
 }
 
-@include ff("BasisGrotesqueProMedium", "../fonts/BasisGrotesquePro/BasisGrotesqueProMedium", 500, normal);
-@include ff("BasisGrotesqueProMono", "../fonts/BasisGrotesquePro/BasisGrotesqueProMono", normal, normal);
-@include ff("BasisGrotesqueProMonoItalic", "../fonts/BasisGrotesquePro/BasisGrotesqueProMonoItalic", 300, normal);
+// @include ff("BasisGrotesqueProMedium", "../fonts/BasisGrotesquePro/BasisGrotesqueProMedium", 500, normal);
+// @include ff("BasisGrotesqueProMono", "../fonts/BasisGrotesquePro/BasisGrotesqueProMono", normal, normal);
+// @include ff("BasisGrotesqueProMonoItalic", "../fonts/BasisGrotesquePro/BasisGrotesqueProMonoItalic", 300, normal);
+@include ff("Roboto", "../fonts/Roboto/Roboto-Regular", 400, normal);
+@include ff("Roboto", "../fonts/Roboto/Roboto-Black", 900, normal);

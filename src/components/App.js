@@ -18,9 +18,9 @@ const AppWrap = styled(FontLoader)``;
 const App = () => {
   return (
     <ThemeProvider theme={theme.main}>
-      <FontProvider fonts={['BasisGrotesquePro', 'BasisGrotesqueProMono']}>
-        <AppWrap font="BasisGrotesqueProMono">
-          <Layout fixedHeader>
+      <FontProvider fonts={['Roboto']}>
+        <AppWrap font="Roboto">
+          <Layout>
             <Switch>
               <Route exact path="/" component={Index} />
               <Route component={Page404} />

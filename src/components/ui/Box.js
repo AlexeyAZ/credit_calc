@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import {
   borders,
   borderColor,
+  borderRadius,
   boxShadow,
   color,
   display,
@@ -20,6 +21,7 @@ const css = props => props.css;
 const Box = styled('div')(
   borders,
   borderColor,
+  borderRadius,
   boxShadow,
   color,
   display,
@@ -37,6 +39,7 @@ const Box = styled('div')(
 Box.propTypes = {
   ...borders.propTypes,
   ...borderColor.propTypes,
+  ...borderRadius.propTypes,
   ...boxShadow.propTypes,
   ...color.propTypes,
   ...display.propTypes,

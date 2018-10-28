@@ -3,20 +3,35 @@ import React from 'react';
 import Container from '../ui/Container';
 import Row from '../ui/Row';
 import Column from '../ui/Column';
+import CreditCalc from '../CreditCalc';
 
 const Index = () =>
-  <Container height={2000}>
+  <Container>
     <Row>
-      <Column width={[1, null, 1/3]} bg="green.main">
-        1
-        <br/>
-        Styled-system is a collection of utility functions that add style props to your React components, which allows for controlling styles based on global theme constants.
-      </Column>
-      <Column width={[1, null, 1/3]} order={[2, null, 3, 2]}>
-        2
-      </Column>
-      <Column width={[1, null, 1/3]} order={[3, null, 2, 3]}>
-        3
+      <Column width={1}>
+        <CreditCalc
+          amount={{
+            min: 100000,
+            max: 1500000,
+            minDescription: ' ₽',
+            maxDescription: ' ₽',
+            defaultValue: 500000,
+          }}
+          period={{
+            min: 3,
+            max: 18,
+            minDescription: ' месяца',
+            maxDescription: ' месяцев',
+            defaultValue: 12,
+          }}
+          desiredYield={{
+            min: 14,
+            max: 20,
+            minDescription: '%',
+            maxDescription: '%',
+            defaultValue: 16,
+          }}
+        />
       </Column>
     </Row>
   </Container>

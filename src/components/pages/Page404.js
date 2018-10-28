@@ -1,17 +1,25 @@
 import React from 'react';
-import PropTypes from 'prop-types'; // eslint-disable-line
 
 import Container from '../ui/Container';
+import Row from '../ui/Row';
+import Column from '../ui/Column';
+import Heading from '../ui/Heading';
+import Text from '../ui/Text';
 
-const Page404 = props => {
+const Page404 = () => {
   return (
     <Container>
-      <p>
-        404
-      </p>
-      <p>
-        Page not found
-      </p>
+      <Row>
+        <Column width={1}>
+          <Heading textAlign="center">
+            404
+          </Heading>
+          <Text textAlign="center">
+            Page not found
+          </Text>
+        </Column>
+      </Row>
+      
     </Container>
   );
 };
