@@ -52,29 +52,26 @@ const CreditCardSliderStyled = styled(Slider)`
     color: ${props => props.theme.colors.gray.dark};
   }
 `;
-class CreditCardSlider extends React.Component {
-  render() {
-    const { val, removeMarks, onChange, ...rest } = this.props;
-    return (
-      <CreditCardSliderStyled
-        {...rest}
-        min={val.min}
-        max={val.max}
-        defaultValue={val.defaultValue}
-        marks={removeMarks ? {} : {
-          [val.min]: {
-            style: {width: '50%', marginLeft: 0, textAlign: 'left'},
-            label: `${formatCurrency(val.min)}${val.minDescription}`
-          },
-          [val.max]: {
-            style: {width: '50%', marginLeft: 0, textAlign: 'right', left: 'auto', right: 0},
-            label: `${formatCurrency(val.max)}${val.maxDescription}`
-          }
-        }}
-        onChange={onChange}
-      />
-    )
-  }
+const CreditCardSlider = ({val, removeMarks, onChange, ...rest}) => {
+  return (
+    <CreditCardSliderStyled
+      {...rest}
+      min={val.min}
+      max={val.max}
+      defaultValue={val.defaultValue}
+      marks={removeMarks ? {} : {
+        [val.min]: {
+          style: {width: '50%', marginLeft: 0, textAlign: 'left'},
+          label: `${formatCurrency(val.min)}${val.minDescription}`
+        },
+        [val.max]: {
+          style: {width: '50%', marginLeft: 0, textAlign: 'right', left: 'auto', right: 0},
+          label: `${formatCurrency(val.max)}${val.maxDescription}`
+        }
+      }}
+      onChange={onChange}
+    />
+  )
 }
 CreditCardSlider.propTypes = {
   val: PropTypes.shape({
@@ -144,7 +141,7 @@ class CreditCalc extends React.Component {
     const stateNewVal = {...this.state[name], value: val};
     const newState = {...this.state, [name]: stateNewVal};
     const expectedYield = {...this.state.expectedYield, value: this.getExpectedYield(newState.amount.value, newState.period.value, newState.desiredYield.value)};
-    const newStateExp = {...this.state, expectedYield};
+    const newStateExp = {...newState, expectedYield};
     this.setState(newStateExp);
   }
 
@@ -187,7 +184,7 @@ class CreditCalc extends React.Component {
               Желаемая доходность:
             </Text>
             <Text fontSize={[3, null,  4]} color="purple.main">
-              от {this.props.desiredYield.min}%
+              от {this.state.desiredYield.value}%
             </Text>
           </CreditCardColumn>
           <CreditCardColumn range>
